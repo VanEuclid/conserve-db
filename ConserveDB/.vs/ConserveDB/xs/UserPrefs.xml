@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{0A7A28F4-867C-4A75-A769-DF39910E6EEE}|ConserveDB">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/appsettings.json">
     <Files>
       <File FileName="ConserveDB/Models/Member.cs" Line="31" Column="1" />
       <File FileName="ConserveDB/Data/MemberContext.cs" Line="14" Column="6" />
-      <File FileName="ConserveDB/Startup.cs" Line="10" Column="36" />
+      <File FileName="ConserveDB/Startup.cs" Line="36" Column="80" />
+      <File FileName="ConserveDB/appsettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,7 +13,7 @@
             <Node name="ConserveDB" expanded="True">
               <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
+              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>
