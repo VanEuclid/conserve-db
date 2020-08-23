@@ -19,26 +19,49 @@ namespace ConserveDB.Controllers
             _context = context;
         }
 
-        // GET: Members
-        //public async Task<IActionResult> Index()
-        //{
-        //    return View(await _context.Member.ToListAsync());
-        //}
+        // GET: Member/Metric
+        public async Task<IActionResult> Metric()
+        {
+            //var members = from m in _context.Member
+            //              select m;
 
-        //public async Task<IActionResult> Index(string searchString)
-        //{
-        //    var members = from m in _context.Member
-        //                 select m;
+            //var final = await members.ToListAsync();
+            //foreach(Member target in final) //checking mvc strategy
+            //{
+            //    Console.Write(target.Name + " : ");
+            //    Console.WriteLine(target.StartDate);
+            //}
 
-        //    if (!String.IsNullOrEmpty(searchString))
-        //    {
-        //        members = members.Where(s => s.Name.Contains(searchString));
-        //    }
+            var validDates = from d in _context.Member
+                             where d.StartDate.Date >= DateTime.Today.AddDays(-7) && d.StartDate.Date <= DateTime.Today
+                             select d; //determines today to minus 7 days new hires inclusive
 
-        //    return View(await members.ToListAsync());
-        //}
+            var final = await validDates.ToListAsync();
 
-        // GET: Movies
+            //Console.WriteLine(DateTime.Today.AddDays(-7) + " : " + DateTime.Today); //Determines a week range for hir3
+            //Console.WriteLine(final2.Count);
+            int newHireC = final.Count;
+            //foreach (Member target in final2)
+            //{
+            //    newHireC++;
+            //    Console.Write(target.Name + " : ");
+            //    Console.WriteLine(target.StartDate);
+            //}
+
+            if (newHireC > 1)
+            {
+                ViewData["NewHire"] = newHireC + " new hires from " + DateTime.Today.AddDays(-7) + " to " + DateTime.Today;
+            }
+            else
+            {
+                ViewData["NewHire"] = newHireC + " new hire from " + DateTime.Today.AddDays(-7) + " to " + DateTime.Today;
+            }
+            
+
+            return View();
+        }
+
+        // GET: Member
         public async Task<IActionResult> Index(string employmentStatus, string searchString, string sortOrder)
         {
 
