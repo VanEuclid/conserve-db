@@ -39,8 +39,11 @@ namespace ConserveDB.Controllers
         //}
 
         // GET: Movies
-        public async Task<IActionResult> Index(string employmentStatus, string searchString)
+        public async Task<IActionResult> Index(string employmentStatus, string searchString, string sortOrder)
         {
+
+            ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_asce" : "";
+
             // Use LINQ to get list of employment status.
             IQueryable<string> statusQuery = from m in _context.Member
                                              orderby m.EmploymentStatus
@@ -48,6 +51,15 @@ namespace ConserveDB.Controllers
 
             var members = from m in _context.Member
                          select m;
+
+            switch (sortOrder)
+            {
+                case "name_asce":
+                    members = members.OrderBy(m => m.Name);
+                    break;
+                default:
+                    break;
+            }
 
             if (!string.IsNullOrEmpty(searchString))
             {
