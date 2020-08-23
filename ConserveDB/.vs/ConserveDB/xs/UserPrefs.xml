@@ -1,9 +1,14 @@
 ﻿<Properties StartupConfiguration="{0A7A28F4-867C-4A75-A769-DF39910E6EEE}|ConserveDB">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Views/Members/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Views/Members/Edit.cshtml">
     <Files>
-      <File FileName="ConserveDB/Views/Members/Metric.cshtml" Line="3" Column="4" />
-      <File FileName="ConserveDB/Controllers/MembersController.cs" Line="54" Column="25" />
-      <File FileName="ConserveDB/Views/Members/Index.cshtml" Line="1" Column="1" />
+      <File FileName="ConserveDB/Views/Members/Metric.cshtml" Line="6" Column="7" />
+      <File FileName="ConserveDB/Controllers/MembersController.cs" Line="164" Column="14" />
+      <File FileName="ConserveDB/Views/Members/Index.cshtml" Line="6" Column="1" />
+      <File FileName="ConserveDB/Views/Home/Privacy.cshtml" Line="6" Column="47" />
+      <File FileName="ConserveDB/Views/Home/Index.cshtml" Line="9" Column="9" />
+      <File FileName="ConserveDB/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="ConserveDB/Views/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="ConserveDB/Views/Members/Edit.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,10 +17,11 @@
             <Node name="ConserveDB" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
                 <Node name="Members" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
+                  <Node name="Edit.cshtml" selected="True" />
                 </Node>
                 <Node name="Shared" expanded="True" />
               </Node>

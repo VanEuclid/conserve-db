@@ -13,6 +13,8 @@ namespace ConserveDB.Controllers
     public class MembersController : Controller
     {
         private readonly MemberContext _context;
+        private static Member oriMember;
+        private static List<string> aLog;
 
         public MembersController(MemberContext context)
         {
@@ -32,14 +34,23 @@ namespace ConserveDB.Controllers
             //    Console.WriteLine(target.StartDate);
             //}
 
-            var validDates = from d in _context.Member
-                             where d.StartDate.Date >= DateTime.Today.AddDays(-7) && d.StartDate.Date <= DateTime.Today
+            var validHireDates = from d in _context.Member
+                             where d.StartDate.Date >= DateTime.Today.AddDays(-7)
+                             && d.StartDate.Date <= DateTime.Today
                              select d; //determines today to minus 7 days new hires inclusive
 
-            var final = await validDates.ToListAsync();
+            var final = await validHireDates.ToListAsync();
+
+            var terminationDates = from t in _context.Member
+                                   where t.EndDate.Date >= DateTime.Today.AddYears(-1)
+                                   && t.EndDate.Date <= DateTime.Today
+                                   && t.EmploymentStatus == "Terminated"
+                                   select t;
+
+            var final2 = await terminationDates.ToListAsync();
 
             //Console.WriteLine(DateTime.Today.AddDays(-7) + " : " + DateTime.Today); //Determines a week range for hir3
-            //Console.WriteLine(final2.Count);
+            //Console.WriteLine(final.Count);
             int newHireC = final.Count;
             //foreach (Member target in final2)
             //{
@@ -47,6 +58,8 @@ namespace ConserveDB.Controllers
             //    Console.Write(target.Name + " : ");
             //    Console.WriteLine(target.StartDate);
             //}
+
+            int terminatedC = final2.Count;
 
             if (newHireC > 1)
             {
@@ -56,7 +69,15 @@ namespace ConserveDB.Controllers
             {
                 ViewData["NewHire"] = newHireC + " new hire from " + DateTime.Today.AddDays(-7) + " to " + DateTime.Today;
             }
-            
+
+            if (terminatedC > 1)
+            {
+                ViewData["Terminated"] = terminatedC + " terminations from " + DateTime.Today.AddYears(-1) + " to " + DateTime.Today;
+            }
+            else
+            {
+                ViewData["Terminated"] = terminatedC + " termination from " + DateTime.Today.AddYears(-1) + " to " + DateTime.Today;
+            }
 
             return View();
         }
@@ -162,6 +183,8 @@ namespace ConserveDB.Controllers
             {
                 return NotFound();
             }
+
+            oriMember = member; //Saving the original record of member for comparison
             return View(member);
         }
 
@@ -183,6 +206,22 @@ namespace ConserveDB.Controllers
                 {
                     _context.Update(member);
                     await _context.SaveChangesAsync();
+
+                    if(oriMember.Manager != member.Manager) //Checking for changes for activity log
+                    {
+                        Console.WriteLine(oriMember.Name + " manager: " + oriMember.Manager +
+                            " has changed to " + member.Manager);
+                        aLog.Add(DateTime.Now + ": " + oriMember.Name + " manager: " + oriMember.Manager +
+                            " has changed to " + member.Manager);
+                    }
+
+                    if(oriMember.Position != member.Position)
+                    {
+                        Console.WriteLine(oriMember.Name + " position: " + oriMember.Position +
+                            " has changed to " + member.Position);
+                        aLog.Add(DateTime.Now + ": " + oriMember.Name + " position: " + oriMember.Position +
+                            " has changed to " + member.Position);
+                    }
                 }
                 catch (DbUpdateConcurrencyException)
                 {
