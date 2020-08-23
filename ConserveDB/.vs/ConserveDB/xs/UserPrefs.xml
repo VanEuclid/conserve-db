@@ -1,25 +1,25 @@
 ﻿<Properties StartupConfiguration="{0A7A28F4-867C-4A75-A769-DF39910E6EEE}|ConserveDB">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Controllers/MembersController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Startup.cs">
     <Files>
-      <File FileName="ConserveDB/Models/Member.cs" Line="31" Column="1" />
-      <File FileName="ConserveDB/Data/MemberContext.cs" Line="14" Column="6" />
-      <File FileName="ConserveDB/Startup.cs" Line="36" Column="80" />
-      <File FileName="ConserveDB/appsettings.json" Line="11" Column="45" />
+      <File FileName="ConserveDB/Views/Members/Index.cshtml" Line="1" Column="1" />
       <File FileName="ConserveDB/Controllers/MembersController.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Views/Shared/_Layout.cshtml" Line="14" Column="76" />
+      <File FileName="ConserveDB/Startup.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ConserveDB" expanded="True">
             <Node name="ConserveDB" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="MembersController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
+              <Node name="Migrations" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Members" expanded="True" />
+                <Node name="Shared" expanded="True" />
               </Node>
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
