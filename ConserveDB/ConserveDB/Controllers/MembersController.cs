@@ -20,9 +20,22 @@ namespace ConserveDB.Controllers
         }
 
         // GET: Members
-        public async Task<IActionResult> Index()
+        //public async Task<IActionResult> Index()
+        //{
+        //    return View(await _context.Member.ToListAsync());
+        //}
+
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Member.ToListAsync());
+            var members = from m in _context.Member
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                members = members.Where(s => s.Name.Contains(searchString));
+            }
+
+            return View(await members.ToListAsync());
         }
 
         // GET: Members/Details/5
