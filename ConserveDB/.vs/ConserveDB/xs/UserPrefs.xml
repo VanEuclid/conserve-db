@@ -1,16 +1,18 @@
 ﻿<Properties StartupConfiguration="{0A7A28F4-867C-4A75-A769-DF39910E6EEE}|ConserveDB">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Models/Member.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Startup.cs">
     <Files>
-      <File FileName="ConserveDB/Models/Member.cs" Line="2" Column="1" />
+      <File FileName="ConserveDB/Models/Member.cs" Line="31" Column="1" />
+      <File FileName="ConserveDB/Data/MemberContext.cs" Line="14" Column="6" />
+      <File FileName="ConserveDB/Startup.cs" Line="10" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ConserveDB" expanded="True">
             <Node name="ConserveDB" expanded="True">
-              <Node name="Models" expanded="True">
-                <Node name="Member.cs" selected="True" />
-              </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
