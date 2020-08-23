@@ -25,17 +25,47 @@ namespace ConserveDB.Controllers
         //    return View(await _context.Member.ToListAsync());
         //}
 
-        public async Task<IActionResult> Index(string searchString)
+        //public async Task<IActionResult> Index(string searchString)
+        //{
+        //    var members = from m in _context.Member
+        //                 select m;
+
+        //    if (!String.IsNullOrEmpty(searchString))
+        //    {
+        //        members = members.Where(s => s.Name.Contains(searchString));
+        //    }
+
+        //    return View(await members.ToListAsync());
+        //}
+
+        // GET: Movies
+        public async Task<IActionResult> Index(string employmentStatus, string searchString)
         {
+            // Use LINQ to get list of employment status.
+            IQueryable<string> statusQuery = from m in _context.Member
+                                             orderby m.EmploymentStatus
+                                            select m.EmploymentStatus;
+
             var members = from m in _context.Member
                          select m;
 
-            if (!String.IsNullOrEmpty(searchString))
+            if (!string.IsNullOrEmpty(searchString))
             {
                 members = members.Where(s => s.Name.Contains(searchString));
             }
 
-            return View(await members.ToListAsync());
+            if (!string.IsNullOrEmpty(employmentStatus))
+            {
+                members = members.Where(x => x.EmploymentStatus == employmentStatus);
+            }
+
+            var memberStatusVM = new MemberEmploymentViewModel
+            {
+                EmploymentStatus = new SelectList(await statusQuery.Distinct().ToListAsync()),
+                Members = await members.ToListAsync()
+            };
+
+            return View(memberStatusVM);
         }
 
         [HttpPost]

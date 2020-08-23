@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{0A7A28F4-867C-4A75-A769-DF39910E6EEE}|ConserveDB">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Models/Member.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Views/Members/Index.cshtml">
     <Files>
-      <File FileName="ConserveDB/Controllers/MembersController.cs" Line="45" Column="10" />
-      <File FileName="ConserveDB/Views/Members/Index.cshtml" Line="13" Column="64" />
-      <File FileName="ConserveDB/Models/Member.cs" Line="15" Column="38" />
+      <File FileName="ConserveDB/Controllers/MembersController.cs" Line="68" Column="37" />
+      <File FileName="ConserveDB/Views/Members/Index.cshtml" Line="14" Column="67" />
+      <File FileName="ConserveDB/Models/MemberEmploymentViewModel.cs" Line="10" Column="43" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,11 +12,11 @@
             <Node name="ConserveDB" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="Member.cs" selected="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Members" expanded="True" />
+                <Node name="Members" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
