@@ -1,18 +1,18 @@
 ﻿<Properties StartupConfiguration="{0A7A28F4-867C-4A75-A769-DF39910E6EEE}|ConserveDB">
   <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Controllers/MembersController.cs">
     <Files>
-      <File FileName="ConserveDB/Views/Members/Metric.cshtml" Line="12" Column="17" />
-      <File FileName="ConserveDB/Controllers/MembersController.cs" Line="16" Column="40" />
-      <File FileName="ConserveDB/Views/Members/Index.cshtml" Line="6" Column="1" />
-      <File FileName="ConserveDB/Views/Home/Privacy.cshtml" Line="6" Column="47" />
-      <File FileName="ConserveDB/Views/Home/Index.cshtml" Line="9" Column="9" />
-      <File FileName="ConserveDB/Views/_ViewStart.cshtml" Line="1" Column="1" />
-      <File FileName="ConserveDB/Views/_ViewImports.cshtml" Line="1" Column="1" />
-      <File FileName="ConserveDB/Views/Members/Edit.cshtml" Line="95" Column="1" />
-      <File FileName="ConserveDB/Data/MemberContext.cs" Line="1" Column="1" />
-      <File FileName="ConserveDB/Startup.cs" Line="26" Column="41" />
-      <File FileName="ConserveDB/Program.cs" Line="16" Column="1" />
-      <File FileName="ConserveDB/Models/MemberEmploymentViewModel.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Views/Members/Metric.cshtml" Line="1" Column="1" />
+      <File FileName="ConserveDB/Controllers/MembersController.cs" />
+      <File FileName="ConserveDB/Views/Members/Index.cshtml" />
+      <File FileName="ConserveDB/Views/Home/Privacy.cshtml" />
+      <File FileName="ConserveDB/Views/Home/Index.cshtml" />
+      <File FileName="ConserveDB/Views/_ViewStart.cshtml" />
+      <File FileName="ConserveDB/Views/_ViewImports.cshtml" />
+      <File FileName="ConserveDB/Views/Members/Edit.cshtml" />
+      <File FileName="ConserveDB/Data/MemberContext.cs" />
+      <File FileName="ConserveDB/Startup.cs" />
+      <File FileName="ConserveDB/Program.cs" />
+      <File FileName="ConserveDB/Models/MemberEmploymentViewModel.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -42,10 +42,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/Controllers/MembersController.cs" relfile="ConserveDB/Controllers/MembersController.cs" line="25" column="1" />
-      <Breakpoint file="/Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/Controllers/MembersController.cs" relfile="ConserveDB/Controllers/MembersController.cs" line="220" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

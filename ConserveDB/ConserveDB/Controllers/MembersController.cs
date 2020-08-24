@@ -48,7 +48,7 @@ namespace ConserveDB.Controllers
 
             var final2 = await terminationDates.ToListAsync();
 
-            //Console.WriteLine(DateTime.Today.AddDays(-7) + " : " + DateTime.Today); //Determines a week range for hir3
+            //Console.WriteLine(DateTime.Today.AddDays(-7) + " : " + DateTime.Today); //Determines a week range for hire
             //Console.WriteLine(final.Count);
             int newHireC = final.Count;
             //foreach (Member target in final2)
