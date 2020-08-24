@@ -14,7 +14,6 @@ namespace ConserveDB.Controllers
     {
         private readonly MemberContext _context;
         private static Member oriMember;
-        private static List<string> aLog;
 
         public MembersController(MemberContext context)
         {
@@ -79,7 +78,8 @@ namespace ConserveDB.Controllers
                 ViewData["Terminated"] = terminatedC + " termination from " + DateTime.Today.AddYears(-1) + " to " + DateTime.Today;
             }
 
-            return View();
+            List<String> look = Startup.aLog;
+            return View(Startup.aLog);
         }
 
         // GET: Member
@@ -209,18 +209,16 @@ namespace ConserveDB.Controllers
 
                     if(oriMember.Manager != member.Manager) //Checking for changes for activity log
                     {
-                        Console.WriteLine(oriMember.Name + " manager: " + oriMember.Manager +
-                            " has changed to " + member.Manager);
-                        aLog.Add(DateTime.Now + ": " + oriMember.Name + " manager: " + oriMember.Manager +
-                            " has changed to " + member.Manager);
+                        //Console.WriteLine(oriMember.Name + " manager: " + oriMember.Manager +
+                        //    " has changed to " + member.Manager);
+                        Startup.aLog.Add(DateTime.Now + ": " + oriMember.Name + " manager: " + oriMember.Manager + " has changed to " + member.Manager);
                     }
 
                     if(oriMember.Position != member.Position)
                     {
-                        Console.WriteLine(oriMember.Name + " position: " + oriMember.Position +
-                            " has changed to " + member.Position);
-                        aLog.Add(DateTime.Now + ": " + oriMember.Name + " position: " + oriMember.Position +
-                            " has changed to " + member.Position);
+                        //Console.WriteLine(oriMember.Name + " position: " + oriMember.Position +
+                        //    " has changed to " + member.Position);
+                        Startup.aLog.Add(DateTime.Now + ": " + oriMember.Name + " position: " + oriMember.Position + " has changed to " + member.Position);
                     }
                 }
                 catch (DbUpdateConcurrencyException)

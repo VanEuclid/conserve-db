@@ -1,28 +1,32 @@
 ﻿<Properties StartupConfiguration="{0A7A28F4-867C-4A75-A769-DF39910E6EEE}|ConserveDB">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Views/Members/Edit.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Controllers/MembersController.cs">
     <Files>
-      <File FileName="ConserveDB/Views/Members/Metric.cshtml" Line="6" Column="7" />
-      <File FileName="ConserveDB/Controllers/MembersController.cs" Line="164" Column="14" />
+      <File FileName="ConserveDB/Views/Members/Metric.cshtml" Line="12" Column="17" />
+      <File FileName="ConserveDB/Controllers/MembersController.cs" Line="16" Column="40" />
       <File FileName="ConserveDB/Views/Members/Index.cshtml" Line="6" Column="1" />
       <File FileName="ConserveDB/Views/Home/Privacy.cshtml" Line="6" Column="47" />
       <File FileName="ConserveDB/Views/Home/Index.cshtml" Line="9" Column="9" />
       <File FileName="ConserveDB/Views/_ViewStart.cshtml" Line="1" Column="1" />
       <File FileName="ConserveDB/Views/_ViewImports.cshtml" Line="1" Column="1" />
-      <File FileName="ConserveDB/Views/Members/Edit.cshtml" Line="1" Column="1" />
+      <File FileName="ConserveDB/Views/Members/Edit.cshtml" Line="95" Column="1" />
+      <File FileName="ConserveDB/Data/MemberContext.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Startup.cs" Line="26" Column="41" />
+      <File FileName="ConserveDB/Program.cs" Line="16" Column="1" />
+      <File FileName="ConserveDB/Models/MemberEmploymentViewModel.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ConserveDB" expanded="True">
             <Node name="ConserveDB" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="MembersController.cs" selected="True" />
+              </Node>
               <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
-                <Node name="Members" expanded="True">
-                  <Node name="Edit.cshtml" selected="True" />
-                </Node>
+                <Node name="Members" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
             </Node>
@@ -38,7 +42,10 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/Controllers/MembersController.cs" relfile="ConserveDB/Controllers/MembersController.cs" line="25" column="1" />
+      <Breakpoint file="/Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/Controllers/MembersController.cs" relfile="ConserveDB/Controllers/MembersController.cs" line="220" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
