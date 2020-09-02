@@ -48,6 +48,24 @@ namespace ConserveDB.Controllers
 
             var final2 = await terminationDates.ToListAsync();
 
+            Dictionary<string, int> counter = new Dictionary<string, int>();
+            foreach(var deptMan in _context.Member)
+            {
+                //Console.WriteLine(deptMan.Department + "/" + deptMan.Manager);
+                if(!counter.ContainsKey(deptMan.Department + "/" + deptMan.Manager))
+                {
+                    counter.Add(deptMan.Department + "/" + deptMan.Manager, 1);
+                }
+                else
+                {
+                    var count = counter.GetValueOrDefault(deptMan.Department + "/" + deptMan.Manager);
+                    count++;
+                    counter[deptMan.Department + "/" + deptMan.Manager] = count;
+                }
+            }
+
+            ViewData["Manager"] = counter;
+
             //Console.WriteLine(DateTime.Today.AddDays(-7) + " : " + DateTime.Today); //Determines a week range for hire
             //Console.WriteLine(final.Count);
             int newHireC = final.Count;

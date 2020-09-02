@@ -10,13 +10,26 @@
 <br />
 <br />
 
-(A change in a position means a change in permissions)
+<h1>Member count for Department/Manager</h1>
+@{
+    var Dictionary = (Dictionary<string, int>)ViewData["Manager"];
+    foreach (KeyValuePair<string, int> enter in Dictionary)
+    {
+        string enterKey = enter.Key + " : ";
+        @Html.DisplayFor(key => enterKey)
+        @Html.DisplayFor(value => enter.Value)
+        <br />
+    }
+}
+<br />
+
 <h2>Activity Log</h2>
+(A change in a position means a change in permissions)
 <p>
     <ul>
         @foreach (var element in Model)
-         {
-           <li>@Html.DisplayFor(m => element)</li>
-         }
+        {
+            <li>@Html.DisplayFor(m => element)</li>
+        }
     </ul>
 </p>
