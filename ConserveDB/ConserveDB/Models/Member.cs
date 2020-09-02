@@ -8,7 +8,9 @@ namespace ConserveDB.Models
     {
         Employed,
         Terminated,
-        Leave
+        Leave,
+        Contract,
+        Vacation
     }
 
     public class Member
