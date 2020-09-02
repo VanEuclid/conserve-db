@@ -180,8 +180,6 @@ namespace ConserveDB.Controllers
             }
 
             var member = await _context.Member.FindAsync(id);
-            //_contextDept = new DepartmentController().getDepartmentControllerContext(); //Access to context supposedly
-
             if (member == null)
             {
                 return NotFound();

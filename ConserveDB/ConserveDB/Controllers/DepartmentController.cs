@@ -19,11 +19,6 @@ namespace ConserveDB.Controllers
             _context = context;
         }
 
-        public DepartmentContext getDepartmentControllerContext() //Get context
-        {
-            return _context;
-        }
-
         // GET: Department
         public async Task<IActionResult> Index()
         {
