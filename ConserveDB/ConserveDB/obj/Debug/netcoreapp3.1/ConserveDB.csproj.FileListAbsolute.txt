@@ -173,3 +173,8 @@
 /Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/ConserveDB.pdb
 /Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/ConserveDB.genruntimeconfig.cache
 /Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/ConserveDB.csprojAssemblyReference.cache
+/Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/Razor/Views/Department/Create.cshtml.g.cs
+/Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/Razor/Views/Department/Delete.cshtml.g.cs
+/Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/Razor/Views/Department/Details.cshtml.g.cs
+/Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/Razor/Views/Department/Edit.cshtml.g.cs
+/Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/Razor/Views/Department/Index.cshtml.g.cs
