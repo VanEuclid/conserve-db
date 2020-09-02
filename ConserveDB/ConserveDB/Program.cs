@@ -18,7 +18,6 @@ namespace ConserveDB
             using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
-
                 try
                 {
                     DepartmentViewModel.Initialize(services);

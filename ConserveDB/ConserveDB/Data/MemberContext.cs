@@ -11,5 +11,6 @@ namespace ConserveDB.Data
         }
 
         public DbSet<Member> Member { get; set; }
+        public DbSet<Department> Departments { get; set; }
     }
 }

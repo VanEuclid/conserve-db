@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -34,6 +35,7 @@ namespace ConserveDB.Models
 
         [Required]
         public string Position { get; set; }
+        [Required]
         public string Department { get; set; }
 
         [Required]

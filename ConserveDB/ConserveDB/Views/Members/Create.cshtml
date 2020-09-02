@@ -32,6 +32,8 @@
                 <input asp-for="PreferredContactPhoneNumber" class="form-control" />
                 <span asp-validation-for="PreferredContactPhoneNumber" class="text-danger"></span>
             </div>
+
+            <!-- Need dropdown of department position dictionary-->
             <div class="form-group">
                 <label asp-for="Position" class="control-label"></label>
                 <input asp-for="Position" class="form-control" />
@@ -54,12 +56,11 @@
             </div>
 
             @Html.Hidden("EmploymentStatus", "Employed") <!-- Hard set model's value -->
-
             <!-- <div class="form-group">
-                <label asp-for="EmploymentStatus" class="control-label"></label>
-                <input asp-for="EmploymentStatus" class="form-control" />
-                <span asp-validation-for="EmploymentStatus" class="text-danger"></span>
-            </div> -->
+        <label asp-for="EmploymentStatus" class="control-label"></label>
+        <input asp-for="EmploymentStatus" class="form-control" />
+        <span asp-validation-for="EmploymentStatus" class="text-danger"></span>
+    </div> -->
 
             <div class="form-group">
                 <label asp-for="Shift" class="control-label"></label>
