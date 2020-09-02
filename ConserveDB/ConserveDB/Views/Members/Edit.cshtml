@@ -1,8 +1,6 @@
 @model ConserveDB.Models.Member
 
-@{
-    ViewData["Title"] = "Edit";
-}
+@{ ViewData["Title"] = "Edit"; }
 
 <h1>Edit</h1>
 
@@ -53,11 +51,18 @@
                 <input asp-for="EndDate" class="form-control" />
                 <span asp-validation-for="EndDate" class="text-danger"></span>
             </div>
-            <div class="form-group">
+
+            Please select an Employment Status:
+            @Html.DropDownListFor(m => m.EmploymentStatus, new SelectList(Enum.GetValues(typeof(EStatus))))
+            <br />
+            <br />
+
+            <!-- <div class="form-group">
                 <label asp-for="EmploymentStatus" class="control-label"></label>
                 <input asp-for="EmploymentStatus" class="form-control" />
                 <span asp-validation-for="EmploymentStatus" class="text-danger"></span>
-            </div>
+            </div> -->
+
             <div class="form-group">
                 <label asp-for="Shift" class="control-label"></label>
                 <input asp-for="Shift" class="form-control" />

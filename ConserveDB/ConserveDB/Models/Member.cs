@@ -4,6 +4,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ConserveDB.Models
 {
+    public enum EStatus
+    {
+        Employed,
+        Terminated,
+        Leave
+    }
+
     public class Member
     {
         public int Id { get; set; }

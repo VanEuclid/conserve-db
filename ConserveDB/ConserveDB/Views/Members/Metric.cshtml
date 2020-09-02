@@ -9,13 +9,14 @@
 @ViewData["Terminated"]
 <br />
 <br />
+
 (A change in a position means a change in permissions)
 <h2>Activity Log</h2>
 <p>
     <ul>
-@foreach (var element in Model)
-{
-    <li>@Html.DisplayFor(m => element)</li>
-}
+        @foreach (var element in Model)
+         {
+           <li>@Html.DisplayFor(m => element)</li>
+         }
     </ul>
 </p>

@@ -163,6 +163,7 @@ namespace ConserveDB.Controllers
         {
             if (ModelState.IsValid)
             {
+                member.EmploymentStatus = "Employed";
                 _context.Add(member);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
