@@ -1,31 +1,28 @@
 ﻿<Properties StartupConfiguration="{0A7A28F4-867C-4A75-A769-DF39910E6EEE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Migrations/Department/DepartmentContextModelSnapshot.cs">
     <Files>
-      <File FileName="ConserveDB/Controllers/DepartmentController.cs" Line="103" Column="45" />
-      <File FileName="ConserveDB/Data/DepartmentContext.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Controllers/MembersController.cs" Line="153" Column="10" />
+      <File FileName="ConserveDB/Program.cs" Line="24" Column="21" />
+      <File FileName="ConserveDB/Models/DepartmentViewModel.cs" Line="11" Column="23" />
+      <File FileName="ConserveDB/Models/MemberEmploymentViewModel.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Models/Department.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Controllers/HomeController.cs" Line="15" Column="1" />
+      <File FileName="ConserveDB/Controllers/DepartmentController.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Startup.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Migrations/Department/DepartmentContextModelSnapshot.cs" Line="1" Column="1" />
       <File FileName="ConserveDB/Data/MemberContext.cs" Line="1" Column="1" />
-      <File FileName="ConserveDB/DepartmentDB.db" />
-      <File FileName="ConserveDB/Migrations/Department/20200902042450_DepartmentCreate.cs" Line="1" Column="1" />
-      <File FileName="ConserveDB/Views/Department/Delete.cshtml" Line="1" Column="1" />
-      <File FileName="ConserveDB/Views/Department/Details.cshtml" Line="1" Column="1" />
-      <File FileName="ConserveDB/Views/Department/Index.cshtml" Line="1" Column="1" />
+      <File FileName="ConserveDB/Data/DepartmentContext.cs" Line="1" Column="1" />
       <File FileName="ConserveDB/Views/Members/Index.cshtml" Line="1" Column="1" />
-      <File FileName="ConserveDB/Views/Home/Index.cshtml" Line="15" Column="45" />
+      <File FileName="ConserveDB/Views/Members/Metric.cshtml" Line="1" Column="1" />
+      <File FileName="ConserveDB/Models/Member.cs" Line="1" Column="1" />
       <File FileName="ConserveDB/Views/_ViewStart.cshtml" Line="1" Column="1" />
       <File FileName="ConserveDB/Views/_ViewImports.cshtml" Line="1" Column="1" />
-      <File FileName="ConserveDB/Views/Shared/_Layout.cshtml" Line="19" Column="100" />
-      <File FileName="ConserveDB/Models/Member.cs" Line="26" Column="42" />
-      <File FileName="ConserveDB/Models/Department.cs" Line="15" Column="34" />
-      <File FileName="ConserveDB/Startup.cs" Line="28" Column="46" />
-      <File FileName="ConserveDB/Views/Members/Create.cshtml" Line="1" Column="1" />
-      <File FileName="ConserveDB/Views/Members/Edit.cshtml" Line="1" Column="32" />
-      <File FileName="ConserveDB/Controllers/MembersController.cs" Line="183" Column="1" />
-      <File FileName="ConserveDB/Views/Department/Edit.cshtml" Line="1" Column="1" />
-      <File FileName="ConserveDB/Controllers/HomeController.cs" Line="18" Column="10" />
-      <File FileName="ConserveDB/Models/MemberEmploymentViewModel.cs" Line="2" Column="1" />
+      <File FileName="ConserveDB/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="ConserveDB/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="ConserveDB/Views/Members/Create.cshtml" Line="36" Column="65" />
+      <File FileName="ConserveDB/Views/Department/Create.cshtml" Line="1" Column="1" />
       <File FileName="ConserveDB/Migrations/MemberContextModelSnapshot.cs" Line="1" Column="1" />
-      <File FileName="ConserveDB/Models/DepartmentViewModel.cs" Line="22" Column="2" />
-      <File FileName="ConserveDB/Program.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Migrations/Department/20200902042450_DepartmentCreate.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -35,16 +32,18 @@
               <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
               <Node name="Migrations" expanded="True">
-                <Node name="Department" expanded="True" />
+                <Node name="Department" expanded="True">
+                  <Node name="DepartmentContextModelSnapshot.cs" selected="True" />
+                </Node>
               </Node>
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">
+                <Node name="Department" expanded="True" />
                 <Node name="Home" expanded="True" />
                 <Node name="Members" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
-              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -55,9 +54,7 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/Controllers/MembersController.cs" relfile="ConserveDB/Controllers/MembersController.cs" line="183" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using ConserveDB.Data;
 using ConserveDB.Models;
 using System;
+using Microsoft.EntityFrameworkCore;
 
 namespace ConserveDB
 {
