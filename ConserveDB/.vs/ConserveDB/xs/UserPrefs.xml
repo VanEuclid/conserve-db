@@ -1,10 +1,21 @@
 ﻿<Properties StartupConfiguration="{0A7A28F4-867C-4A75-A769-DF39910E6EEE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/DepartmentDB.db">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Models/Department.cs">
     <Files>
-      <File FileName="ConserveDB/Controllers/DepartmentController.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Controllers/DepartmentController.cs" Line="2" Column="1" />
       <File FileName="ConserveDB/Data/DepartmentContext.cs" Line="1" Column="1" />
       <File FileName="ConserveDB/Data/MemberContext.cs" Line="1" Column="1" />
       <File FileName="ConserveDB/DepartmentDB.db" />
+      <File FileName="ConserveDB/Migrations/Department/20200902042450_DepartmentCreate.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Views/Department/Delete.cshtml" Line="1" Column="1" />
+      <File FileName="ConserveDB/Views/Department/Details.cshtml" Line="1" Column="1" />
+      <File FileName="ConserveDB/Views/Department/Index.cshtml" Line="1" Column="1" />
+      <File FileName="ConserveDB/Views/Members/Index.cshtml" Line="1" Column="1" />
+      <File FileName="ConserveDB/Views/Home/Index.cshtml" Line="15" Column="45" />
+      <File FileName="ConserveDB/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="ConserveDB/Views/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="ConserveDB/Views/Shared/_Layout.cshtml" Line="19" Column="100" />
+      <File FileName="ConserveDB/Models/Member.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Models/Department.cs" Line="11" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,10 +24,19 @@
             <Node name="ConserveDB" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
-              <Node name="Migrations" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Migrations" expanded="True">
+                <Node name="Department" expanded="True" />
+              </Node>
+              <Node name="Models" expanded="True">
+                <Node name="Department.cs" selected="True" />
+              </Node>
               <Node name="Properties" expanded="True" />
-              <Node name="DepartmentDB.db" selected="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Department" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Members" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
