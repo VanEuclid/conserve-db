@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{0A7A28F4-867C-4A75-A769-DF39910E6EEE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Models/Department.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Models/MemberEmploymentViewModel.cs">
     <Files>
       <File FileName="ConserveDB/Controllers/DepartmentController.cs" Line="2" Column="1" />
       <File FileName="ConserveDB/Data/DepartmentContext.cs" Line="1" Column="1" />
@@ -14,8 +14,15 @@
       <File FileName="ConserveDB/Views/_ViewStart.cshtml" Line="1" Column="1" />
       <File FileName="ConserveDB/Views/_ViewImports.cshtml" Line="1" Column="1" />
       <File FileName="ConserveDB/Views/Shared/_Layout.cshtml" Line="19" Column="100" />
-      <File FileName="ConserveDB/Models/Member.cs" Line="1" Column="1" />
-      <File FileName="ConserveDB/Models/Department.cs" Line="11" Column="9" />
+      <File FileName="ConserveDB/Models/Member.cs" Line="26" Column="42" />
+      <File FileName="ConserveDB/Models/Department.cs" Line="15" Column="34" />
+      <File FileName="ConserveDB/Startup.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Views/Members/Create.cshtml" Line="1" Column="1" />
+      <File FileName="ConserveDB/Views/Members/Edit.cshtml" Line="1" Column="32" />
+      <File FileName="ConserveDB/Controllers/MembersController.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Views/Department/Edit.cshtml" Line="1" Column="1" />
+      <File FileName="ConserveDB/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Models/MemberEmploymentViewModel.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -28,11 +35,10 @@
                 <Node name="Department" expanded="True" />
               </Node>
               <Node name="Models" expanded="True">
-                <Node name="Department.cs" selected="True" />
+                <Node name="MemberEmploymentViewModel.cs" selected="True" />
               </Node>
               <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Department" expanded="True" />
                 <Node name="Home" expanded="True" />
                 <Node name="Members" expanded="True" />
                 <Node name="Shared" expanded="True" />

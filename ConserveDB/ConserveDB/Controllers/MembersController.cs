@@ -163,7 +163,7 @@ namespace ConserveDB.Controllers
         {
             if (ModelState.IsValid)
             {
-                member.EmploymentStatus = "Employed";
+                //member.EmploymentStatus = "Employed";
                 _context.Add(member);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -180,6 +180,8 @@ namespace ConserveDB.Controllers
             }
 
             var member = await _context.Member.FindAsync(id);
+            //_contextDept = new DepartmentController().getDepartmentControllerContext(); //Access to context supposedly
+
             if (member == null)
             {
                 return NotFound();
