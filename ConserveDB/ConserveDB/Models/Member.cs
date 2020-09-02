@@ -36,6 +36,7 @@ namespace ConserveDB.Models
         public string Position { get; set; }
         public string Department { get; set; }
 
+        [Required]
         [Display(Name = "Start Date")]
         [DataType(DataType.Date)]
         public DateTime StartDate { get; set; }

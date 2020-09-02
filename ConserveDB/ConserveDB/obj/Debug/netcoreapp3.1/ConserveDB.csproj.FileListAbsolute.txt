@@ -157,6 +157,7 @@
 /Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/Razor/Views/Members/Details.cshtml.g.cs
 /Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/Razor/Views/Members/Edit.cshtml.g.cs
 /Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/Razor/Views/Members/Index.cshtml.g.cs
+/Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/Razor/Views/Members/Metric.cshtml.g.cs
 /Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
 /Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
 /Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
@@ -171,5 +172,3 @@
 /Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/ConserveDB.dll
 /Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/ConserveDB.pdb
 /Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/ConserveDB.genruntimeconfig.cache
-/Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/ConserveDB.csprojAssemblyReference.cache
-/Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/Razor/Views/Members/Metric.cshtml.g.cs

@@ -49,6 +49,20 @@ namespace ConserveDB
                     options.UseSqlServer(connectionString);
                 }
             });
+
+            services.AddDbContext<DepartmentContext>(options =>
+            {
+                var departmentConnectionString = Configuration.GetConnectionString("DepartmentContext");
+
+                if (Environment.IsDevelopment())
+                {
+                    options.UseSqlite(departmentConnectionString);
+                }
+                else
+                {
+                    options.UseSqlServer(departmentConnectionString);
+                }
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

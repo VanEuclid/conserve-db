@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{0A7A28F4-867C-4A75-A769-DF39910E6EEE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Models/MemberEmploymentViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/appsettings.json">
     <Files>
       <File FileName="ConserveDB/Views/Members/Create.cshtml" Line="11" Column="18" />
       <File FileName="ConserveDB/Controllers/MembersController.cs" Line="154" Column="25" />
@@ -9,8 +9,15 @@
       <File FileName="ConserveDB/Views/Members/Details.cshtml" Line="1" Column="1" />
       <File FileName="ConserveDB/Views/Members/Metric.cshtml" Line="1" Column="1" />
       <File FileName="ConserveDB/Models/MemberEmploymentViewModel.cs" Line="1" Column="1" />
-      <File FileName="ConserveDB/Models/Member.cs" Line="13" Column="17" />
+      <File FileName="ConserveDB/Models/Member.cs" Line="39" Column="18" />
       <File FileName="ConserveDB/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Models/Department.cs" Line="13" Column="1" />
+      <File FileName="ConserveDB/Data/MemberContext.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Data/DepartmentContext.cs" Line="16" Column="1" />
+      <File FileName="ConserveDB/Startup.cs" Line="52" Column="1" />
+      <File FileName="ConserveDB/appsettings.json" Line="12" Column="26" />
+      <File FileName="ConserveDB/Program.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/ConserveDB.db" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,15 +27,14 @@
               <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
               <Node name="Migrations" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="MemberEmploymentViewModel.cs" selected="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
                 <Node name="Members" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
+              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>
