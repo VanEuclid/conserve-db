@@ -141,6 +141,7 @@
 /Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
 /Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
 /Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/ConserveDB.csprojAssemblyReference.cache
 /Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/ConserveDB.AssemblyInfoInputs.cache
 /Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/ConserveDB.AssemblyInfo.cs
 /Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/Debug/netcoreapp3.1/ConserveDB.csproj.CoreCompileInputs.cache
