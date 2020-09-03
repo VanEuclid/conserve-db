@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{0A7A28F4-867C-4A75-A769-DF39910E6EEE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Models/Member.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Startup.cs">
     <Files>
       <File FileName="ConserveDB/Views/Members/Create.cshtml" Line="1" Column="32" />
       <File FileName="ConserveDB/Views/Shared/_Layout.cshtml" Line="19" Column="122" />
@@ -7,7 +7,14 @@
       <File FileName="ConserveDB/Controllers/DepartmentController.cs" Line="1" Column="1" />
       <File FileName="ConserveDB/Controllers/MembersController.cs" Line="171" Column="10" />
       <File FileName="ConserveDB/Views/Members/Edit.cshtml" Line="1" Column="1" />
-      <File FileName="ConserveDB/Models/Member.cs" Line="40" Column="32" />
+      <File FileName="ConserveDB/Models/Member.cs" Line="40" Column="22" />
+      <File FileName="ConserveDB/Migrations/MemberContextModelSnapshot.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Migrations/20200823030740_InitialCreate.cs" Line="33" Column="20" />
+      <File FileName="ConserveDB/Migrations/20200823030740_InitialCreate.Designer.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Migrations/Department/20200902042450_DepartmentCreate.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/DepartmentDB.db" />
+      <File FileName="ConserveDB/Program.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Startup.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,10 +27,9 @@
                 <Node name="Department" expanded="True">
                   <Node name="20200902042450_DepartmentCreate.cs" expanded="True" />
                 </Node>
+                <Node name="20200823030740_InitialCreate.cs" expanded="True" />
               </Node>
-              <Node name="Models" expanded="True">
-                <Node name="Member.cs" selected="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Department" expanded="True" />
@@ -31,6 +37,7 @@
                 <Node name="Members" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
