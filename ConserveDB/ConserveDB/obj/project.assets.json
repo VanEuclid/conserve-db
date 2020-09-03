@@ -8796,7 +8796,7 @@
       "outputPath": "/Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/van/.nuget/NuGet/NuGet.Config"
+        "/Users/van/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

@@ -1,5 +1,18 @@
 ﻿<Properties StartupConfiguration="{0A7A28F4-867C-4A75-A769-DF39910E6EEE}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Startup.cs">
+    <Files>
+      <File FileName="ConserveDB/Startup.cs" Line="37" Column="1" />
+      <File FileName="ConserveDB/Program.cs" />
+      <File FileName="ConserveDB/ConserveDB.db" />
+      <File FileName="ConserveDB/appsettings.json" />
+      <File FileName="ConserveDB/Views/_ViewStart.cshtml" />
+      <File FileName="ConserveDB/Views/_ViewImports.cshtml" />
+      <File FileName="ConserveDB/Views/Shared/Error.cshtml" />
+      <File FileName="ConserveDB/Views/Shared/_ValidationScriptsPartial.cshtml" />
+      <File FileName="ConserveDB/Views/Shared/_Layout.cshtml" />
+      <File FileName="ConserveDB/Views/Department/Index.cshtml" />
+      <File FileName="ConserveDB/Controllers/DepartmentController.cs" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -9,13 +22,11 @@
               <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Department" expanded="True" />
                 <Node name="Home" expanded="True" />
-                <Node name="Member" expanded="True">
-                  <Node name="Edit.cshtml" selected="True" />
-                </Node>
+                <Node name="Members" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
