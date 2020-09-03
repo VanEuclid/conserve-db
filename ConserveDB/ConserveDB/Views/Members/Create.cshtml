@@ -2,6 +2,8 @@
 
 @{
     ViewData["Title"] = "Create";
+    var dict = ViewData["Jobs"] as Dictionary<string, List<string>>;
+    SelectList keys = new SelectList(dict.Keys);
 }
 
 <h1>Create</h1>
@@ -33,16 +35,21 @@
                 <span asp-validation-for="PreferredContactPhoneNumber" class="text-danger"></span>
             </div>
 
-            <!-- Need dropdown of department position dictionary-->
+            <!-- Dropdown for department's list-->
+            @Html.DropDownListFor(m => m.Department, keys)
+            <br />
+            <br />
+
+            @*<div class="form-group">
+            <label asp-for="Department" class="control-label"></label>
+            <input asp-for="Department" class="form-control" />
+            <span asp-validation-for="Department" class="text-danger"></span>
+              </div>*@
+
             <div class="form-group">
                 <label asp-for="Position" class="control-label"></label>
                 <input asp-for="Position" class="form-control" />
                 <span asp-validation-for="Position" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Department" class="control-label"></label>
-                <input asp-for="Department" class="form-control" />
-                <span asp-validation-for="Department" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="StartDate" class="control-label"></label>
@@ -55,7 +62,7 @@
                 <span asp-validation-for="EndDate" class="text-danger"></span>
             </div>
 
-            @Html.Hidden("EmploymentStatus", "Employed") <!-- Hard set model's value -->      
+            @Html.Hidden("EmploymentStatus", "Employed") <!-- Hard set model's value -->
 
             <div class="form-group">
                 <label asp-for="Shift" class="control-label"></label>

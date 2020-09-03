@@ -44,11 +44,11 @@ namespace ConserveDB.Controllers
                                    where t.EndDate.Date >= DateTime.Today.AddYears(-1)
                                    && t.EndDate.Date <= DateTime.Today
                                    && t.EmploymentStatus == "Terminated"
-                                   select t;
+                                   select t; //determines today to a year terminations
 
             var final2 = await terminationDates.ToListAsync();
 
-            Dictionary<string, int> counter = new Dictionary<string, int>();
+            Dictionary<string, int> counter = new Dictionary<string, int>(); //determines department/manager count
             foreach(var deptMan in _context.Members)
             {
                 //Console.WriteLine(deptMan.Department + "/" + deptMan.Manager);
@@ -77,7 +77,6 @@ namespace ConserveDB.Controllers
             //}
 
             int terminatedC = final2.Count;
-
             if (newHireC > 1)
             {
                 ViewData["NewHire"] = newHireC + " new hires from " + DateTime.Today.AddDays(-7) + " to " + DateTime.Today;
@@ -96,7 +95,7 @@ namespace ConserveDB.Controllers
                 ViewData["Terminated"] = terminatedC + " termination from " + DateTime.Today.AddYears(-1) + " to " + DateTime.Today;
             }
 
-            List<String> look = Startup.aLog;
+            List<String> look = Startup.aLog; //log for activity since startup
             return View(Startup.aLog);
         }
 
@@ -166,11 +165,32 @@ namespace ConserveDB.Controllers
             return View(member);
         }
 
+
         // GET: Members/Create
         public IActionResult Create()
         {
+            var departmentHolder = from depart in _context.Departments
+                                   select depart;
+
+            Dictionary<string, List<string>> departmentPairs = new Dictionary<string, List<string>>(); //creates a dictionary for dropdowns
+            foreach(Department target in departmentHolder)
+            {
+                Console.WriteLine(target.departmentName + target.position);
+                if(departmentPairs.ContainsKey(target.departmentName))
+                {
+                    departmentPairs[target.departmentName].Add(target.position);
+                }
+                else
+                {
+                    departmentPairs.Add(target.departmentName, new List<string> { target.position });
+                }
+            }
+
+            //Console.WriteLine(departmentPairs.Count);
+            ViewData["Jobs"] = departmentPairs;
             return View();
         }
+
 
         // POST: Members/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
@@ -202,6 +222,26 @@ namespace ConserveDB.Controllers
             {
                 return NotFound();
             }
+
+            var departmentHolder = from depart in _context.Departments
+                                   select depart;
+
+            Dictionary<string, List<string>> departmentPairs = new Dictionary<string, List<string>>(); //creates a dictionary for dropdowns
+            foreach (Department target in departmentHolder)
+            {
+                Console.WriteLine(target.departmentName + target.position);
+                if (departmentPairs.ContainsKey(target.departmentName))
+                {
+                    departmentPairs[target.departmentName].Add(target.position);
+                }
+                else
+                {
+                    departmentPairs.Add(target.departmentName, new List<string> { target.position });
+                }
+            }
+
+            //Console.WriteLine(departmentPairs.Count);
+            ViewData["Jobs"] = departmentPairs;
 
             oriMember = member; //Saving the original record of member for comparison
             return View(member);
