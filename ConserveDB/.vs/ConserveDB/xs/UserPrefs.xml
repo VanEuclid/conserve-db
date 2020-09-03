@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Views/Home/Index.cshtml">
     <Files>
       <File FileName="ConserveDB/Startup.cs" Line="35" Column="80" />
-      <File FileName="ConserveDB/Program.cs" Line="1" Column="1" />
-      <File FileName="ConserveDB/appsettings.json" Line="14" Column="1" />
+      <File FileName="ConserveDB/Program.cs" />
+      <File FileName="ConserveDB/appsettings.json" />
       <File FileName="ConserveDB/Views/_ViewStart.cshtml" />
       <File FileName="ConserveDB/Views/_ViewImports.cshtml" />
       <File FileName="ConserveDB/Views/Shared/Error.cshtml" />
@@ -19,9 +19,7 @@
         <State name="__root__">
           <Node name="ConserveDB" expanded="True">
             <Node name="ConserveDB" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="DepartmentController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" selected="True" />
               <Node name="Data" expanded="True" />
               <Node name="Migrations" expanded="True" />
               <Node name="Models" expanded="True" />
