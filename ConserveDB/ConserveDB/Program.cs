@@ -22,7 +22,7 @@ namespace ConserveDB
                 var services = scope.ServiceProvider;
                 try
                 {
-                    DepartmentSeed.Initialize(services);
+                    //enter seeders here
                 }
                 catch (Exception ex)
                 {

@@ -36,33 +36,22 @@ namespace ConserveDB
         {
             services.AddControllersWithViews();
 
-            services.AddDbContext<MemberContext>(options =>
-            {
-                var connectionString = Configuration.GetConnectionString("MemberContext");
+            services.AddDbContext<ConserveContext>(options =>
+            options.UseSqlite(Configuration.GetConnectionString("ConverseContext")));
 
-                if (Environment.IsDevelopment())
-                {
-                    options.UseSqlite(connectionString);
-                }
-                else
-                {
-                    options.UseSqlServer(connectionString);
-                }
-            });
+            //services.AddDbContext<Converse>(options =>
+            //{
+            //    var connectionString = Configuration.GetConnectionString("ConserveContext");
 
-            services.AddDbContext<DepartmentContext>(options =>
-            {
-                var departmentConnectionString = Configuration.GetConnectionString("DepartmentContext");
-
-                if (Environment.IsDevelopment())
-                {
-                    options.UseSqlite(departmentConnectionString);
-                }
-                else
-                {
-                    options.UseSqlServer(departmentConnectionString);
-                }
-            });
+            //    if (Environment.IsDevelopment())
+            //    {
+            //        options.UseSqlite(connectionString);
+            //    }
+            //    else
+            //    {
+            //        options.UseSqlServer(connectionString);
+            //    }
+            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
