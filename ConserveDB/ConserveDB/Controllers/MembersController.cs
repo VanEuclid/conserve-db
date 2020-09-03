@@ -12,10 +12,10 @@ namespace ConserveDB.Controllers
 {
     public class MembersController : Controller
     {
-        private readonly MemberContext _context;
+        private readonly ConserveContext _context;
         private static Member oriMember;
 
-        public MembersController(MemberContext context)
+        public MembersController(ConserveContext context)
         {
             _context = context;
         }
@@ -33,14 +33,14 @@ namespace ConserveDB.Controllers
             //    Console.WriteLine(target.StartDate);
             //}
 
-            var validHireDates = from d in _context.Member
+            var validHireDates = from d in _context.Members
                              where d.StartDate.Date >= DateTime.Today.AddDays(-7)
                              && d.StartDate.Date <= DateTime.Today
                              select d; //determines today to minus 7 days new hires inclusive
 
             var final = await validHireDates.ToListAsync();
 
-            var terminationDates = from t in _context.Member
+            var terminationDates = from t in _context.Members
                                    where t.EndDate.Date >= DateTime.Today.AddYears(-1)
                                    && t.EndDate.Date <= DateTime.Today
                                    && t.EmploymentStatus == "Terminated"
@@ -49,7 +49,7 @@ namespace ConserveDB.Controllers
             var final2 = await terminationDates.ToListAsync();
 
             Dictionary<string, int> counter = new Dictionary<string, int>();
-            foreach(var deptMan in _context.Member)
+            foreach(var deptMan in _context.Members)
             {
                 //Console.WriteLine(deptMan.Department + "/" + deptMan.Manager);
                 if(!counter.ContainsKey(deptMan.Department + "/" + deptMan.Manager))
@@ -107,11 +107,11 @@ namespace ConserveDB.Controllers
             ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_asce" : "";
 
             // Use LINQ to get list of employment status.
-            IQueryable<string> statusQuery = from m in _context.Member
+            IQueryable<string> statusQuery = from m in _context.Members
                                              orderby m.EmploymentStatus
                                             select m.EmploymentStatus;
 
-            var members = from m in _context.Member
+            var members = from m in _context.Members
                          select m;
 
             switch (sortOrder)
@@ -156,7 +156,7 @@ namespace ConserveDB.Controllers
                 return NotFound();
             }
 
-            var member = await _context.Member
+            var member = await _context.Members
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (member == null)
             {
@@ -197,7 +197,7 @@ namespace ConserveDB.Controllers
                 return NotFound();
             }
 
-            var member = await _context.Member.FindAsync(id);
+            var member = await _context.Members.FindAsync(id);
             if (member == null)
             {
                 return NotFound();
@@ -264,7 +264,7 @@ namespace ConserveDB.Controllers
                 return NotFound();
             }
 
-            var member = await _context.Member
+            var member = await _context.Members
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (member == null)
             {
@@ -279,15 +279,15 @@ namespace ConserveDB.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var member = await _context.Member.FindAsync(id);
-            _context.Member.Remove(member);
+            var member = await _context.Members.FindAsync(id);
+            _context.Members.Remove(member);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool MemberExists(int id)
         {
-            return _context.Member.Any(e => e.Id == id);
+            return _context.Members.Any(e => e.Id == id);
         }
     }
 }
