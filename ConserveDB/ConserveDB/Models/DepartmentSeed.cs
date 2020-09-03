@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace ConserveDB.Models
 {
-    public class DepartmentViewModel
+    public class DepartmentSeed
     { 
         public static void Initialize(IServiceProvider serviceProvider)
         {

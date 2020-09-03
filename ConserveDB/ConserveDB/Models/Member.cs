@@ -35,6 +35,7 @@ namespace ConserveDB.Models
 
         [Required]
         public string Position { get; set; }
+
         [Required]
         public string Department { get; set; }
 

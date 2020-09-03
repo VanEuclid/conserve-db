@@ -6,11 +6,13 @@ using ConserveDB.Data;
 using ConserveDB.Models;
 using System;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace ConserveDB
 {
     public class Program
     {
+        public Dictionary<string, List<string>> departmentPosition;
         public static void Main(string[] args)
         {
             var host = CreateHostBuilder(args).Build();
@@ -20,7 +22,7 @@ namespace ConserveDB
                 var services = scope.ServiceProvider;
                 try
                 {
-                    DepartmentViewModel.Initialize(services);
+                    DepartmentSeed.Initialize(services);
                 }
                 catch (Exception ex)
                 {
