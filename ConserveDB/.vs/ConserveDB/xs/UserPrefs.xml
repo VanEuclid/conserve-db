@@ -1,32 +1,31 @@
 ﻿<Properties StartupConfiguration="{0A7A28F4-867C-4A75-A769-DF39910E6EEE}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Views/Home/Index.cshtml">
     <Files>
-      <File FileName="ConserveDB/Views/Members/Create.cshtml" Line="1" Column="32" />
+      <File FileName="ConserveDB/Startup.cs" Line="41" Column="38" />
+      <File FileName="ConserveDB/Program.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/appsettings.json" Line="15" Column="1" />
+      <File FileName="ConserveDB/Views/_ViewStart.cshtml" />
+      <File FileName="ConserveDB/Views/_ViewImports.cshtml" />
+      <File FileName="ConserveDB/Views/Shared/Error.cshtml" />
+      <File FileName="ConserveDB/Views/Shared/_ValidationScriptsPartial.cshtml" />
       <File FileName="ConserveDB/Views/Shared/_Layout.cshtml" />
       <File FileName="ConserveDB/Views/Department/Index.cshtml" />
       <File FileName="ConserveDB/Controllers/DepartmentController.cs" />
-      <File FileName="ConserveDB/Controllers/MembersController.cs" />
-      <File FileName="ConserveDB/Views/Members/Edit.cshtml" />
-      <File FileName="ConserveDB/Models/Member.cs" />
-      <File FileName="ConserveDB/Migrations/MemberContextModelSnapshot.cs" />
-      <File FileName="ConserveDB/Migrations/20200823030740_InitialCreate.cs" />
-      <File FileName="ConserveDB/Migrations/20200823030740_InitialCreate.Designer.cs" />
-      <File FileName="ConserveDB/Migrations/Department/20200902042450_DepartmentCreate.cs" />
-      <File FileName="ConserveDB/DepartmentDB.db" />
-      <File FileName="ConserveDB/Program.cs" />
-      <File FileName="ConserveDB/Startup.cs" />
-      <File FileName="ConserveDB/Views/Home/Index.cshtml" Line="23" Column="19" />
+      <File FileName="ConserveDB/Views/Home/Index.cshtml" Line="23" Column="65" />
+      <File FileName="ConserveDB/ConserveDB.db" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ConserveDB" expanded="True">
             <Node name="ConserveDB" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="DepartmentController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Department" expanded="True" />
-                <Node name="Home" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
-                </Node>
+                <Node name="Home" expanded="True" />
                 <Node name="Members" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
