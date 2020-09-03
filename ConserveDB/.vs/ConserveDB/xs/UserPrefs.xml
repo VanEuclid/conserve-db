@@ -1,19 +1,23 @@
 ﻿<Properties StartupConfiguration="{0A7A28F4-867C-4A75-A769-DF39910E6EEE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Properties/launchSettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Migrations/Department/20200902042450_DepartmentCreate.Designer.cs">
     <Files>
       <File FileName="ConserveDB/Views/Members/Index.cshtml" Line="1" Column="1" />
-      <File FileName="ConserveDB/Controllers/MembersController.cs" />
-      <File FileName="ConserveDB/Data/MemberContext.cs" />
+      <File FileName="ConserveDB/Controllers/MembersController.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Data/MemberContext.cs" Line="1" Column="1" />
       <File FileName="ConserveDB/Program.cs" />
       <File FileName="ConserveDB/Startup.cs" />
-      <File FileName="ConserveDB/Data/DepartmentContext.cs" />
-      <File FileName="ConserveDB/Models/Member.cs" />
+      <File FileName="ConserveDB/Data/DepartmentContext.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Models/Member.cs" Line="36" Column="19" />
       <File FileName="ConserveDB/Models/ErrorViewModel.cs" />
       <File FileName="ConserveDB/Models/DepartmentSeed.cs" />
       <File FileName="ConserveDB/Models/MemberEmploymentViewModel.cs" />
       <File FileName="ConserveDB/appsettings.json" />
-      <File FileName="ConserveDB/Models/Department.cs" />
+      <File FileName="ConserveDB/Models/Department.cs" Line="19" Column="49" />
       <File FileName="ConserveDB/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="ConserveDB/Migrations/Department/DepartmentContextModelSnapshot.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Controllers/DepartmentController.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Migrations/Department/20200902042450_DepartmentCreate.cs" Line="1" Column="1" />
+      <File FileName="ConserveDB/Migrations/Department/20200902042450_DepartmentCreate.Designer.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,11 +26,15 @@
             <Node name="ConserveDB" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
-              <Node name="Migrations" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Properties" expanded="True">
-                <Node name="launchSettings.json" selected="True" />
+              <Node name="Migrations" expanded="True">
+                <Node name="Department" expanded="True">
+                  <Node name="20200902042450_DepartmentCreate.cs" expanded="True">
+                    <Node name="20200902042450_DepartmentCreate.Designer.cs" selected="True" />
+                  </Node>
+                </Node>
               </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Department" expanded="True" />
                 <Node name="Home" expanded="True" />

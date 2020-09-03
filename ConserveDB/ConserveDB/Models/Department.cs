@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace ConserveDB.Models
@@ -14,5 +15,6 @@ namespace ConserveDB.Models
         [Required]
         [Display(Name = "Position")]
         public string position { get; set; }
+
     }
 }
