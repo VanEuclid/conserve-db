@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{2B665C3D-A797-43D3-B023-A5F74C235656}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB2/Controllers/MemberController.cs">
+    <Files>
+      <File FileName="ConserveDB2/Controllers/MemberController.cs" Line="49" Column="1" />
+      <File FileName="ConserveDB2/Views/Member/Create.cshtml" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ConserveDB2" expanded="True">
+            <Node name="ConserveDB2" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="MemberController.cs" selected="True" />
+              </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="Migrations" expanded="True">
+                <Node name="20200903033109_InitialCreate.cs" expanded="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Department" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Member" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ConserveDB2 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

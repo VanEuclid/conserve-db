@@ -2,15 +2,21 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="ConserveDB/Views/Home/Index.cshtml">
     <Files>
       <File FileName="ConserveDB/Controllers/MembersController.cs" Line="244" Column="48" />
-      <File FileName="ConserveDB/Views/Members/Create.cshtml" Line="38" Column="1" />
-      <File FileName="ConserveDB/Views/Members/Edit.cshtml" Line="49" Column="1" />
+      <File FileName="ConserveDB/Views/Members/Create.cshtml" />
+      <File FileName="ConserveDB/Views/Members/Edit.cshtml" />
       <File FileName="ConserveDB/Views/Home/Index.cshtml" Line="24" Column="54" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ConserveDB" expanded="True">
-            <Node name="ConserveDB" expanded="True" />
+            <Node name="ConserveDB" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
