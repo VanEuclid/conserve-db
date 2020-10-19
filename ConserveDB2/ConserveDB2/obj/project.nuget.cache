@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CsOLIMN8D1z8xS/9S4TgHSADyrvAthisqjmUITaYK4iNWcH/bvpr5H0GzsSduKFIrOhuKa/2eudewLRdGEMXwQ==",
+  "dgSpecHash": "ZWmz9vplgbxErDVgVwCd2o+CqX/NUQIeyxWnoKyCfnaINmaJmMYM4vVAKYwo5s0WQcKFdd16rz+jNBdPKmLlBg==",
   "success": true,
-  "projectFilePath": "/Users/van/Documents/Github/ConserveDB/ConserveDB2/ConserveDB2/ConserveDB2.csproj",
+  "projectFilePath": "/Users/van/Documents/Github/conserve-db/ConserveDB2/ConserveDB2/ConserveDB2.csproj",
   "expectedPackageFiles": [
     "/Users/van/.nuget/packages/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "/Users/van/.nuget/packages/microsoft.aspnetcore.razor/2.2.0/microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

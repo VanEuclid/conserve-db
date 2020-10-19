@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/ConserveDB.csproj": {}
+    "/Users/van/Documents/Github/conserve-db/ConserveDB/ConserveDB/ConserveDB.csproj": {}
   },
   "projects": {
-    "/Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/ConserveDB.csproj": {
+    "/Users/van/Documents/Github/conserve-db/ConserveDB/ConserveDB/ConserveDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/ConserveDB.csproj",
+        "projectUniqueName": "/Users/van/Documents/Github/conserve-db/ConserveDB/ConserveDB/ConserveDB.csproj",
         "projectName": "ConserveDB",
-        "projectPath": "/Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/ConserveDB.csproj",
+        "projectPath": "/Users/van/Documents/Github/conserve-db/ConserveDB/ConserveDB/ConserveDB.csproj",
         "packagesPath": "/Users/van/.nuget/packages/",
-        "outputPath": "/Users/van/Documents/Github/ConserveDB/ConserveDB/ConserveDB/obj/",
+        "outputPath": "/Users/van/Documents/Github/conserve-db/ConserveDB/ConserveDB/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/van/.config/NuGet/NuGet.Config"
