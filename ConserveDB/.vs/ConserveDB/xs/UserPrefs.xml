@@ -10,13 +10,7 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ConserveDB" expanded="True">
-            <Node name="ConserveDB" expanded="True">
-              <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
-                </Node>
-              </Node>
-            </Node>
+            <Node name="ConserveDB" expanded="True" />
           </Node>
         </State>
       </Pad>
